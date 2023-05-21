@@ -7,6 +7,17 @@ document.addEventListener("DOMContentLoaded", function() {
   $('.navbar-toggler').on('click', function () {
     $('.navbar-toggler-icon').toggleClass('open');
   });
+  
+	window.addEventListener('scroll', function() {
+	  var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+	  var sidebar = document.querySelector('#sidebar');
+	  var windowHeight = window.innerHeight;
+	  var sidebarHeight = sidebar.offsetHeight;
+	
+	  if (windowHeight > sidebarHeight) {
+	    sidebar.style.height = (windowHeight + scrollTop) + 'px';
+	  }
+	});
 
   const sidebar = document.querySelector('#sidebar');
   if (sidebar) {

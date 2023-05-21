@@ -46,7 +46,6 @@ public class SorteoController {
         model.addAttribute("participantes", listaParticipantes);
         user = (User) session.getAttribute("user");
         List<Ganador> ganador = ganadorRepo.findAllWithoutGrouping();
-        System.out.println(ganador.toString());
         // Agregar los ganadores al modelo para enviarlos al frontend
         model.addAttribute("ganador", ganador);
         if (user != null) {

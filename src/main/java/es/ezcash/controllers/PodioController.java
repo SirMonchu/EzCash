@@ -27,8 +27,6 @@ public class PodioController {
 
         // Obtener los tres primeros usuarios
         List<User> topUsers = users.subList(0, Math.min(10, users.size()));
-
-        System.out.println(topUsers.toString());
         // Agregar los valores al modelo
         model.addAttribute("topUsers", topUsers);
 

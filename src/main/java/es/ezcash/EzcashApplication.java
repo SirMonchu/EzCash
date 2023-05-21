@@ -9,5 +9,4 @@ public class EzcashApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(EzcashApplication.class, args);
 	}
-
 }

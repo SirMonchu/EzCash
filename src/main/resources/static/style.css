@@ -1,6 +1,7 @@
 @media screen and (max-width: 900px) {
   .navbar {
   display: block;
+  margin-left: 0px;
   }
   }
   
@@ -15,16 +16,35 @@
 body {
   background-color: black;
 }
-.sidebar {
-    background-color: #343a40;
-    color: #fff;
-    height: 100%;
-    position: fixed;
-    left: 0;
-    top: 1;
-    width: 250px;
-    z-index: 1; /* Ponemos el menú por encima del contenido principal */
-  }
+
+.logo {
+	width: 50px;
+}
+
+		.profile-img-sm {
+			width: 50px !important;
+			height: 50px !important;
+			border-radius: 50%;
+            object-fit: cover;
+			margin-left: 10px;
+			margin-top: 10px;
+		}
+		
+		.border-bottom {
+  border-bottom-width: 6px !important; /* Ajusta el ancho del borde según tus necesidades */
+}
+		
+
+	.sidebar {
+	  background-color: #343a40;
+	  color: #fff;
+	  height: 100%;
+	  position: fixed !important;
+	  left: 0;
+	  top: 1;
+	  width: 250px;
+	  z-index: 1; /* Ponemos el menú por encima del contenido principal */
+	}
   .sidebar h4 {
     margin: 20px 0 10px 20px;
     font-weight: 600;
@@ -41,7 +61,6 @@ body {
     color: #343a40;
   }
   .main-content {
-    margin-left: 250px;
     padding: 20px;
   }
   /* Estilos para el botón del menú */
@@ -187,8 +206,8 @@ body {
   }
   
   .user-profile img {
-    width: 150px;
-    height: 150px;
+    width: 50%;
+    height: 50%;
     object-fit: cover;
     border-radius: 50%;
     margin-bottom: 20px;
@@ -252,10 +271,10 @@ body {
   margin-bottom: 0;
 }
 
-.main-content {
-  margin-left: 250px;
-  padding: 20px;
+.def_img {
+	width: 50%
 }
+
   
   
   
