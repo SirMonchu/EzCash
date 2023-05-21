@@ -1,0 +1,16 @@
+/* _progress-info.scss */
+.progress-info {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    pointer-events: none;
+  }
+  

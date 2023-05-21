@@ -1,0 +1,53 @@
+/* _profile.scss */
+.profile-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: filter 0.5s ease;
+  
+    &:hover {
+      filter: opacity(0.5);
+    }
+  
+    &:hover .file-upload {
+      display: block;
+    }
+  }
+  
+  .file-upload {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+  }
+  
+  #profile-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  #change-profile-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    font-size: 2rem;
+  }
+  
+  #profile-container:hover #change-profile-icon {
+    opacity: 1;
+    cursor: pointer;
+  }
+  

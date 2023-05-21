@@ -1,0 +1,36 @@
+/* _navbar.scss */
+@media screen and (max-width: 900px) {
+    .navbar {
+      display: block;
+    }
+  }
+  
+  @media screen and (min-width: 900px) {
+    .navbar {
+      display: none;
+    }
+  
+    .main-content {
+      margin-left: 250px;
+    }
+  }
+  
+  .navbar-toggler {
+    border: none;
+    background: transparent;
+  
+    &:focus {
+      outline: none;
+    }
+  
+    &-icon {
+      background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cline x1='4' y1='6' x2='26' y2='6' stroke='%23fff' stroke-width='2'/%3E%3Cline x1='4' y1='15' x2='26' y2='15' stroke='%23fff' stroke-width='2'/%3E%3Cline x1='4' y1='24' x2='26' y2='24' stroke='%23fff' stroke-width='2'/%3E%3C/svg%3E");
+      width: 24px;
+      height: 24px;
+    }
+  
+    &-icon.open {
+      background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cline x1='4' y1='4' x2='26' y2='26' stroke='%23fff' stroke-width='2'/%3E%3Cline x1='4' y1='26' x2='26' y2='4' stroke='%23fff' stroke-width='2'/%3E%3C/svg%3E");
+    }
+  }
+  

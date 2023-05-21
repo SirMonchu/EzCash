@@ -1,0 +1,23 @@
+/* _podium-place.scss */
+.podium-place {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .gold {
+    background-color: #ffd700;
+  }
+  
+  .silver {
+    background-color: #c0c0c0;
+  }
+  
+  .bronze {
+    background-color: #cd7f32;
+  }
+  

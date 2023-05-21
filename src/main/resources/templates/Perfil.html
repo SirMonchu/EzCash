@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perfil</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="style.css" rel="stylesheet">
+        <style>
+        .profile-img-sm {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body data-js="Perfil">
+  <div class="col-sm-12 bg-success row row-no-padding h1 m-0 border-bottom border-dark border-5">
+    EzCash
+  </div>
+  <nav class="navbar navbar-dark bg-dark">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#sidebar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  </nav>
+  <div class="sidebar collapse" id="sidebar">
+      <div class="d-flex align-items-center mb-2">
+        <img class="profile-img-sm" id="profile-img-sm" src="/img/default-profile-picture.png" alt="Profile Image">
+        <h4 th:text="${username}"></h4>
+    </div>
+  <ul class="nav flex-column">
+  <li class="nav-item">
+    <a class="nav-link" href="Main">
+      <i class="fas fa-chart-line mr-2"></i> Ganar €
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="Cartera">
+      <i class="fas fa-wallet mr-2"></i> Cartera
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link active" href="#">
+      <i class="fas fa-user-circle mr-2"></i> Perfil
+      <span class="sr-only">(current)</span>
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="Inviationes">
+      <i class="fas fa-users mr-2"></i> Invitaciones
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="Podio">
+      <i class="fas fa-trophy mr-2"></i> Podio
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="Sorteo">
+      <i class="fas fa-gift mr-2"></i> Sorteo
+    </a>
+  </li>
+        <li class="nav-item mt-5">
+ 			<a class="nav-link" href="/logout" id="logout">
+   	 			<i class="fas fa-sign-out-alt mr-2"></i> Cerrar sesión
+  			</a>
+		</li> 
+  </ul>
+  </div>
+  <div class="main-content">
+    <div class="container py-5">
+      <div class="col-md-5 offset-md-3 text-center m-auto p-0">
+          <div class="position-relative" id="profile-container">
+              <img src="img/default-profile-picture.png" alt="Foto de Perfil" class="profile-img" id="profile-img">
+              <span id="change-profile-icon"><i class="fas fa-file-upload"></i></span>
+              <div class="file-upload">
+                  <label for="file-input">
+                      <i class="fa fa-upload"></i>
+                  </label>
+                  <input id="file-input" type="file" style="display:none">
+              </div>
+          </div>
+          <h1 class="mt-3" id="username" th:text="${username}">Nombre de Usuario</h1>
+          <button type="button" class="btn btn-link p-0" id="edit-btn"><i class="fa fa-edit"></i></button>
+          <div class="progress mt-3">
+            <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
+              <div id="level-info"></div>
+            </div>
+            <div id="next-level-info"></div>
+          </div>
+        </div>
+      </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>  
+  <script defer src="scripts.js"></script>
+      <script>
+    var profileImg = localStorage.getItem('profileImg');
+    // Usa la variable "profileImg" en tu página como sea necesario
+	</script>
+</body>
+</html>

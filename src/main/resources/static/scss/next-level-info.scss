@@ -1,0 +1,13 @@
+/* _next-level-info.scss */
+.next-level-info {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    padding-right: 10px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #fff;
+    pointer-events: none;
+  }
+  

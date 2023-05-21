@@ -1,0 +1,27 @@
+/* _table.scss */
+.table {
+    th,
+    td {
+      vertical-align: middle;
+      text-align: center;
+    }
+  
+    th {
+      font-size: 20px;
+      font-weight: bold;
+    }
+  
+    tbody tr:nth-child(odd) {
+      background-color: #f2f2f2;
+    }
+  
+    &-bordered th,
+    &-bordered td {
+      border: 1px solid #dee2e6;
+    }
+  
+    &-striped tbody tr:nth-child(odd) {
+      background-color: #f7f7f7;
+    }
+  }
+  
